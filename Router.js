@@ -8,7 +8,7 @@ router.get("/product", async (req, res) => {
   console.log(data);
 });
 //update
-router.post("/product", async (req,     res) => {
+router.post("/product", async (req,res) => {
   const data = new prdct({
     name: req.body.name,
     price: req.body.price,
