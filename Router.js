@@ -11,7 +11,8 @@ router.get("/product", async (req, res) => {
 router.post("/product", async (req,res) => {
   const data = new prdct({
     name: req.body.name,
-    price: req.body.price,
+    price: req.body.price
+
   });
 
   await data.save((err, msg) => {

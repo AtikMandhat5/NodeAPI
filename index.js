@@ -3,7 +3,7 @@ var express = require("express");
 var routesfile = require("./Router");
 var bodyParser = require("body-parser");
 
-mongoose.connect("mongodb+srv://ateeq:abcd123@cluster0.d9qrv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://ateeq:@cluster0.d9qrv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
   .then(() => {
     console.log("Database connected");
 
